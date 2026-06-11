@@ -490,8 +490,8 @@ header h1 {
 .banner-img {
     width: 100%;
     max-width: 100%;
-    height: 320px; /* Altura fija para el banner en desktop */
-    object-fit: cover; /* Centra y recorta la imagen sin deformarla */
+    height: 320px; 
+    object-fit: cover; 
     border-radius: 12px;
     border: 2px solid var(--border-color);
     box-shadow: 0 0 25px rgba(255, 31, 68, 0.15);
