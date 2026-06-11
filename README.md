@@ -5,4 +5,4 @@ Grupo 1
 - Luis Guillermo Imbachi Peña
 - Manuel Caballero Escobar
 - Danna Valentina Lopez Ballen
-- Laura Romero Loaiza
+- Laura Valentina Romero Loaiza
