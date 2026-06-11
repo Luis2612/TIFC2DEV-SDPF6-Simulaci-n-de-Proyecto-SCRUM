@@ -437,7 +437,7 @@ header h1 {
     box-shadow: 0 0 30px rgba(255, 31, 68, 0.3);
 }
 
-/* --- Sección Bienvenida --- */
+
 .seccion-bienvenida {
     margin-bottom: 3rem;
 }
@@ -454,9 +454,8 @@ header h1 {
     line-height: 1.8;
 }
 
-/* --- Sección Recomendaciones (Grid de Tarjetas) --- */
 .seccion-recomendaciones {
-    grid-column: span 2; /* Ocupa todo el ancho en el layout del index */
+    grid-column: span 2; 
     width: 100%;
     margin-bottom: 2rem;
 }
@@ -535,8 +534,6 @@ header h1 {
     line-height: 1.6;
     flex-grow: 1;
 }
-
-/* --- Estilos para la página de Nosotros (Equipo) --- */
 .nuestro-equipo {
     grid-column: span 2;
     margin-top: 1rem;
@@ -597,11 +594,11 @@ header h1 {
     }
     
     .banner-img {
-        height: 200px; /* Altura más pequeña y adaptada para móviles */
+        height: 200px;
     }
 }
 
-/* --- Estilos para la página de Nosotros (Secciones de historia, misión, etc.) --- */
+
 .banner, .historia, .mision, .vision, .porque, .valores, .equipo {
     background: rgba(12, 13, 20, 0.75);
     border: 1px solid var(--border-color);
@@ -656,7 +653,6 @@ header h1 {
     color: var(--accent-red);
 }
 
-/* --- Equipo Grid y Tarjetas (Teammate's Classes) --- */
 .contenedor-tarjetas {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
