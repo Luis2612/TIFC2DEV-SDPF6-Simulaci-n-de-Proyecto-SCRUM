@@ -1,57 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <link href="style.css" rel="stylesheet">
     <meta charset="UTF-8">
-    <meta name="viewport" content="Hola">
-    <title>Nosotros</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimeStart - Nosotros</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome para los iconos de redes sociales de Daniel -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
-
 <body>
 
-</body>
-
-<footer>
-    <div class="contenedorFooter">
-        <div class="columna">
-            <h3>AnimeStart</h3>
-            <p>Contacto:</p>
-            <p>contacto@animestart.com</p>
-        </div>
-
-        <div class="columna">
-            <ul>
-                <h3>Equipo:</h3>
-                <li>Yenny Alexandra Castro Manjarez</li>
-                <li>Daniel Steven Casas Pulido</li>
-                <li>Luis Guillermo Imbachi Peña</li>
-                <li>Manuel Caballero Escobar</li>
-                <li>Danna Valentina Lopez Ballen</li>
-                <li>Laura Valentina Romero Loaiza</li>
-                <li>Jonathan Arevalo Silva</li>
-            </ul>
-        </div>
-        <div class="columna">
-            <ul>
-                <h3> Redes sociales: </h3>
-                <li>
-                    <i class="fa-brands fa-instagram"></i>
-                    Instagram
-                </li>
-                <li>
-                    <i class="fa-brands fa-twitter"></i>
-                    Twitter
-                </li>
-                <li>
-                    <i class="fa-brands fa-facebook"></i>
-                    Facebook
-                </li>
-            </ul>
-        </div>
+    <!-- Contenedor del fondo animado (Video o GIF) -->
+    <div class="video-bg-container">
+        <video autoplay loop muted playsinline class="video-bg">
+            <source src="assets/bg-anime.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
     </div>
 
-</footer>
+    <!-- Header y Barra de Navegación Cohesiva -->
+    <header>
+        <h1>AnimeStart</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html" class="active">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main>
+        <!-- Sección Quiénes Somos -->
+        <section class="contacto">
+            <h2>¿Quiénes Somos?</h2>
+            <p>
+                AnimeStart es un portal y blog comunitario de simulación creado en el marco del proyecto SCRUM del equipo de desarrollo. Nuestra misión es conectar a la comunidad amante del anime y el manga en Colombia y Latinoamérica, ofreciendo reseñas, recomendaciones de calidad y un espacio de comunicación interactivo.
+            </p>
+            <p>
+                Este proyecto representa el esfuerzo coordinado del Sprint 1, donde aplicamos la metodología ágil para diseñar una interfaz moderna, responsiva y con una excelente experiencia de usuario.
+            </p>
+        </section>
+
+        <!-- Sección de Nuestro Equipo -->
+        <section class="nuestro-equipo">
+            <h2 class="section-title">Nuestro Equipo (SCRUM)</h2>
+            <div class="equipo-grid">
+                <!-- Miembro 1 -->
+                <div class="miembro-card">
+                    <i class="fa-solid fa-crown miembro-icon"></i>
+                    <h3 class="miembro-nombre">Luis Guillermo Imbachi</h3>
+                    <p class="miembro-rol">Scrum Master</p>
+                </div>
+
+                <!-- Miembro 2 -->
+                <div class="miembro-card">
+                    <i class="fa-solid fa-code miembro-icon"></i>
+                    <h3 class="miembro-nombre">Danna Valentina Lopez</h3>
+                    <p class="miembro-rol">Desarrollo Formulario</p>
+                </div>
+
+                <!-- Miembro 3 -->
+                <div class="miembro-card">
+                    <i class="fa-solid fa-paint-brush miembro-icon"></i>
+                    <h3 class="miembro-nombre">Daniel Steven Casas</h3>
+                    <p class="miembro-rol">Desarrollo UI & Footer</p>
+                </div>
+
+                <!-- Miembro 4 -->
+                <div class="miembro-card">
+                    <i class="fa-solid fa-laptop-code miembro-icon"></i>
+                    <h3 class="miembro-nombre">Yenny Alexandra Castro</h3>
+                    <p class="miembro-rol">Desarrolladora Frontend</p>
+                </div>
+
+                <!-- Miembro 5 -->
+                <div class="miembro-card">
+                    <i class="fa-solid fa-database miembro-icon"></i>
+                    <h3 class="miembro-nombre">Manuel Caballero</h3>
+                    <p class="miembro-rol">Administrador de Base</p>
+                </div>
+
+                <!-- Miembro 6 -->
+                <div class="miembro-card">
+                    <i class="fa-solid fa-pen-nib miembro-icon"></i>
+                    <h3 class="miembro-nombre">Laura Valentina Romero</h3>
+                    <p class="miembro-rol">Redactora de Contenidos</p>
+                </div>
+
+                <!-- Miembro 7 -->
+                <div class="miembro-card">
+                    <i class="fa-solid fa-magnifying-glass miembro-icon"></i>
+                    <h3 class="miembro-nombre">Jonathan Arevalo</h3>
+                    <p class="miembro-rol">Diseñador UX/UI</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer agregado por Daniel Casas -->
+    <footer>
+        <div class="contenedorFooter">
+            <div class="columna">
+                <h3>AnimeStart</h3>
+                <p>Contacto:</p>
+                <p>contacto@animestart.com</p>
+            </div>
+
+            <div class="columna">
+                <ul>
+                    <h3>Equipo:</h3>
+                    <li>Yenny Alexandra Castro Manjarez</li>
+                    <li>Daniel Steven Casas Pulido</li>
+                    <li>Luis Guillermo Imbachi Peña</li>
+                    <li>Manuel Caballero Escobar</li>
+                    <li>Danna Valentina Lopez Ballen</li>
+                    <li>Laura Valentina Romero Loaiza</li>
+                    <li>Jonathan Arevalo Silva</li>
+                </ul>
+            </div>
+            <div class="columna">
+                <ul>
+                    <h3> Redes sociales: </h3>
+                    <li>
+                        <i class="fa-brands fa-instagram"></i>
+                        Instagram
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-twitter"></i>
+                        Twitter
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-facebook"></i>
+                        Facebook
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
 </html>

@@ -1,93 +1,156 @@
-<!-- Sección Principal (Hero) de la Página de Inicio -->
-<section class="banner-principal">
-    <div class="banner-content">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimeStart - Inicio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
 
-        <!-- Lado izquierdo del inicio, bloque de Texto -->
-        <div class="banner-text-block">
-            <!-- Título Principal del Sitio (H1) -->
-            <h1 class="banner-title">
-                Bienvenido a su blog de anime <br>
-                <span class="highlight-text">AnimeStart</span>
-            </h1>
+    <!-- Contenedor del fondo animado (Video o GIF) -->
+    <div class="video-bg-container">
+        <video autoplay loop muted playsinline class="video-bg">
+            <source src="assets/bg-anime.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+    </div>
 
+    <!-- Header y Barra de Navegación Cohesiva -->
+    <header>
+        <h1>AnimeStart</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-            <p class="banner-description">
-                Explora los mejores animes para iniciar, las recomendaciones de la semana y mucho más. Tu viaje por el
-                mundo del anime comienza aquí.
-            </p>
+    <main>
+        <!-- Sección Principal (Hero) de la Página de Inicio -->
+        <section class="banner-principal">
+            <div class="banner-content">
+                <!-- Lado izquierdo del inicio, bloque de Texto -->
+                <div class="banner-text-block">
+                    <!-- Título Principal del Sitio (H1) -->
+                    <h1 class="banner-title">
+                        Bienvenido a su blog de anime <br>
+                        <span class="highlight-text">AnimeStart</span>
+                    </h1>
+
+                    <p class="banner-description">
+                        Explora los mejores animes para iniciar, las recomendaciones de la semana y mucho más. Tu viaje por el
+                        mundo del anime comienza aquí.
+                    </p>
+                </div>
+
+                <!-- Lado derecho del inicio imagen del anime -->
+                <div class="banner-image-block">
+                    <img src="Imagenes/bannerBLOG.jpg" class="banner-img" alt="Banner AnimeStart">
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2: Bienvenida al Sitio -->
+        <section class="seccion-bienvenida">
+            <div class="bienvenida-content">
+                <h2 class="section-title">Tu portal para iniciar en el universo del Anime</h2>
+                <p class="bienvenida-text">
+                    ¡Te damos la bienvenida a Anime Start! Este es el punto de encuentro ideal para la
+                    comunidad amante de los animes. Nuestro objetivo es ofrecerte un espacio organizado donde
+                    puedas enterarte de los mejores animes, los destacados semanales y encontrar
+                    nuevas historias que disfrutar.
+                </p>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 3: Recomendaciones de la Semana -->
+        <section class="seccion-recomendaciones">
+            <h2 class="section-title">Recomendaciones de la Semana</h2>
+
+            <!-- Contenedor para agrupar las tarjetas de recomendaciones -->
+            <div class="recomendaciones-grid">
+                <!-- Recomendación 1 -->
+                <article class="recomendacion-card">
+                    <img src="Imagenes/rec1.jpg" class="rec-img" alt="Death Note">
+                    <h3 class="rec-anime-title">Death Note</h3>
+                    <h4 class="rec-anime-genre">Género: Misterio / Thriller Psicológico</h4>
+                    <p class="rec-anime-desc">
+                        Un brillante estudiante de secundaria encuentra un misterioso cuaderno capaz de matar
+                        a cualquiera cuyo nombre sea escrito en él. Un fascinante duelo de mentes e intriga policial que no te
+                        puedes perder.
+                    </p>
+                </article>
+
+                <!-- Recomendación 2 -->
+                <article class="recomendacion-card">
+                    <img src="Imagenes/rec2.jpg" class="rec-img" alt="Jujutsu Kaisen">
+                    <h3 class="rec-anime-title">Jujutsu Kaisen</h3>
+                    <h4 class="rec-anime-genre">Género: Acción / Sobrenatural</h4>
+                    <p class="rec-anime-desc">
+                        Un shonen moderno e indispensable cargado de batallas espectaculares, un sistema de poder sumamente
+                        inteligente y una animación de primer nivel a cargo del estudio MAPPA.
+                    </p>
+                </article>
+
+                <!-- Recomendación 3 -->
+                <article class="recomendacion-card">
+                    <img src="Imagenes/rec3.jpg" class="rec-img" alt="Kimetsu no Yaiba">
+                    <h3 class="rec-anime-title">Kimetsu no Yaiba</h3>
+                    <h4 class="rec-anime-genre">Género: Aventura / Fantasía oscura</h4>
+                    <p class="rec-anime-desc">
+                        Tanjiro emprende un viaje para convertirse en cazador de demonios
+                        con el único objetivo de devolverle la humanidad a su hermana Nezuko. Destaca por su impecable nivel de
+                        animación a cargo del estudio ufotable.
+                    </p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer agregado por Daniel Casas -->
+    <footer>
+        <div class="contenedorFooter">
+            <div class="columna">
+                <h3>AnimeStart</h3>
+                <p>Contacto:</p>
+                <p>contacto@animestart.com</p>
+            </div>
+
+            <div class="columna">
+                <ul>
+                    <h3>Equipo:</h3>
+                    <li>Yenny Alexandra Castro Manjarez</li>
+                    <li>Daniel Steven Casas Pulido</li>
+                    <li>Luis Guillermo Imbachi Peña</li>
+                    <li>Manuel Caballero Escobar</li>
+                    <li>Danna Valentina Lopez Ballen</li>
+                    <li>Laura Valentina Romero Loaiza</li>
+                    <li>Jonathan Arevalo Silva</li>
+                </ul>
+            </div>
+            <div class="columna">
+                <ul>
+                    <h3> Redes sociales: </h3>
+                    <li>
+                        <i class="fa-brands fa-instagram"></i>
+                        Instagram
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-twitter"></i>
+                        Twitter
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-facebook"></i>
+                        Facebook
+                    </li>
+                </ul>
+            </div>
         </div>
+    </footer>
 
-        <!-- Lado derecho del inicio imagen del anime -->
-        <div class="banner-image-block">
-            <img src="Imagenes/bannerBLOG.jpg" class="banner-img">
-        </div>
-    </div>
-
-</section>
-
-
-
-<!-- SECCIÓN 2: Bienvenida al Sitio -->
-<section class="seccion-bienvenida">
-    <div class="bienvenida-content">
-
-        <h2 class="section-title">Tu portal para iniciar en el universo del Anime</h2>
-
-        <p class="bienvenida-text">
-            ¡Te damos la bienvenida a Anime Start! Este es el punto de encuentro ideal para la
-            comunidad amante de los animes. Nuestro objetivo es ofrecerte un espacio organizado donde
-            puedas enterarte de los mejores animes, los destacados semanales y encontrar
-            nuevas historias que disfrutar.
-        </p>
-
-    </div>
-</section>
-
-
-<!-- SECCIÓN 3: Recomendaciones de la Semana -->
-<section class="seccion-recomendaciones">
-    <h2 class="section-title">Recomendaciones de la Semana</h2>
-
-    <!-- Contenedor para agrupar las tarjetas de recomendaciones -->
-    <div class="recomendaciones-grid">
-
-        <!-- Recomendación 1 -->
-        <article class="recomendacion-card">
-            <img src="Imagenes/rec1.jpg" class="rec-img">
-            <!-- Título del anime (H3) -->
-            <h3 class="rec-anime-title">Death Note</h3>
-            <h4 class="rec-anime-genre">Género: Misterio / Thriller Psicológico</h4>
-            <p class="rec-anime-desc">
-                Un brillante estudiante de secundaria encuentra un misterioso cuaderno capaz de matar
-                a cualquiera cuyo nombre sea escrito en él. Un fascinante duelo de mentes e intriga policial que no te
-                puedes perder.
-            </p>
-        </article>
-
-        <!-- Recomendación 2 -->
-        <article class="recomendacion-card">
-            <img src="Imagenes/rec2.jpg" class="rec-img">
-            <h3 class="rec-anime-title">Jujutsu Kaisen</h3>
-            <h4 class="rec-anime-genre">Género: Acción / Sobrenatural</h4>
-            <p class="rec-anime-desc">
-                Un shonen moderno e indispensable cargado de batallas espectaculares, un sistema de poder sumamente
-                inteligente y una animación de primer nivel a cargo del estudio MAPPA.
-            </p>
-        </article>
-
-        <!-- Recomendación 3 -->
-        <article class="recomendacion-card">
-            <img src="Imagenes/rec3.jpg" class="rec-img">
-            <h3 class="rec-anime-title">Kimetsu no Yaiba</h3>
-            <h4 class="rec-anime-genre">Género: Aventura / Fantasía oscura</h4>
-            <p class="rec-anime-desc">
-                Tanjiro emprende un viaje para convertirse en cazador de demonios
-                con el único objetivo de devolverle la humanidad a su hermana Nezuko. Destaca por su impecable nivel de
-                animación a cargo del estudio ufotable.
-            </p>
-        </article>
-
-    </div>
-</section>
-
-</main>
+</body>
+</html>
