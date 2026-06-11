@@ -1,0 +1,116 @@
+/* Pagina */
+
+body{
+    background-color: black;
+    color: white;
+    font-family: cursive;
+}
+
+header{
+    text-align: center;
+    padding: 30px;
+}
+
+h1{
+    font-size: 50px;
+}
+
+h2{
+    font-size: 35px;
+    color: cyan;
+}
+
+section{
+    padding: 30px;
+}
+
+p{
+    font-size: 20px;
+}
+
+img{
+    width: 100%;
+    max-width: 800px;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+}
+
+/* Banner*/
+
+.banner{
+    text-align: center;
+    padding: 20px;
+}
+
+.banner img{
+    width: 100%;
+    max-width: 1200px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Valores lista*/
+
+.valores{
+    text-align: center;
+}
+
+.valores ul{
+    display: inline-block;
+    text-align: left;
+    background: #111;
+    border: 2px solid cyan;
+    border-radius: 15px;
+    padding: 25px 40px;
+    box-shadow: 0 0 15px cyan;
+}
+
+
+/* Tarjetas de miembros */
+
+body{
+    background-color: black;
+    color: white;
+    font-family: cursive;
+}
+
+h1,h2{
+    color: #00ffff;
+    text-align: center;
+}
+
+.equipo{
+    padding: 40px;
+}
+
+.contenedor-tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tarjeta{
+    width: 250px;
+    background: #111;
+    border: 2px solid #00ffff;
+    border-radius: 15px;
+    text-align: center;
+    padding: 15px;
+    transition: 0.3s;
+}
+
+.tarjeta:hover{
+    transform: scale(1.05);
+}
+
+.tarjeta img{
+    width: 100%;
+    border-radius: 10px;
+}
