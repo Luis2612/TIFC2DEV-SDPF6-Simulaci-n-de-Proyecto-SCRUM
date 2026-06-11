@@ -1,2 +1,2 @@
-Autores Equipo 1
-Luis Imbachi 
+Autores
+Luis Imbachi
