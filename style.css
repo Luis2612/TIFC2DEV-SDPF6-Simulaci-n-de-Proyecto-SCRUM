@@ -1,69 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-/* Footer */
-footer{
-    background-color: #e50914;
-    color: white;
-    text-align: center;
-    padding: 25px;
-    font-family: cursive;
-    font-size: 18px;
-}
-
-footer h3{
-    margin-bottom: 10px;
-}
-
-footer ul{
-    list-style: none;
-    margin-top: 10px;
-    padding: 0;
-}
-
-footer li{
-    margin-bottom: 5px;
-}
-
-.contenedorFooter{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 40px 20px;
-}
-
-.columna{
-    flex: 1 1 25%;
-    margin-bottom: 20px;
-}
-
-footer i{
-    font-size: 20px;
-    padding: 10px;
-}
-
-/* Responsive */
-@media (max-width: 768px){
-
-    .contenedorFooter{
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .columna{
-        width: 100%;
-    }
-
-}
-
-
-
-
-
-
 /*Apartado de Contacto */
 :root {
     --bg-color: #0c0d14;            
@@ -665,5 +599,108 @@ header h1 {
     .banner-img {
         height: 200px; /* Altura más pequeña y adaptada para móviles */
     }
+}
+
+/* --- Estilos para la página de Nosotros (Secciones de historia, misión, etc.) --- */
+.banner, .historia, .mision, .vision, .porque, .valores, .equipo {
+    background: rgba(12, 13, 20, 0.75);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 2.5rem;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    margin-bottom: 2.5rem;
+}
+
+.banner h2, .historia h2, .mision h2, .vision h2, .porque h2, .valores h2, .equipo h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+    position: relative;
+    padding-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.banner h2::after, .historia h2::after, .mision h2::after, .vision h2::after, .porque h2::after, .valores h2::after, .equipo h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background-color: var(--accent-red);
+    border-radius: 2px;
+    box-shadow: 0 0 8px var(--accent-red);
+}
+
+.banner p, .historia p, .mision p, .vision p, .porque p, .valores ul {
+    color: #cbd5e1;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.valores ul {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+.valores li {
+    margin-bottom: 0.5rem;
+    color: #cbd5e1;
+}
+
+.valores li strong {
+    color: var(--accent-red);
+}
+
+/* --- Equipo Grid y Tarjetas (Teammate's Classes) --- */
+.contenedor-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.tarjeta {
+    background: rgba(12, 13, 20, 0.75);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    backdrop-filter: blur(8px);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-red);
+    box-shadow: 0 10px 20px rgba(229, 9, 20, 0.1);
+}
+
+.tarjeta img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--accent-red);
+    margin-bottom: 1rem;
+    box-shadow: 0 0 15px rgba(229, 9, 20, 0.2);
+}
+
+.tarjeta h3 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    color: #ffffff;
+}
+
+.tarjeta p {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    text-transform: uppercase;
+    font-weight: 500;
 }
 
