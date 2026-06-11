@@ -1,2 +1,0 @@
-Autores
-Luis Imbachi
