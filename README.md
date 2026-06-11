@@ -6,3 +6,4 @@ Grupo 1
 - Manuel Caballero Escobar
 - Danna Valentina Lopez Ballen
 - Laura Valentina Romero Loaiza
+- Jonathan Arevalo Silva
