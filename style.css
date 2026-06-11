@@ -1,100 +1,16 @@
-/* General */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-/* Cuerpo */
-body{
-    background-color: #000;
-    color: white;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-/* Contenedor general */
-.container{
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-}
-
-/* NavBar */
-nav{
-    position: sticky;
-    top: 0;
-    background-color: #c1121f;
-    color: white;
-    padding: 15px;
-    z-index: 1000;
-}
-
-nav ul{
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-
-nav a{
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-nav a:hover{
-    color: #ffd60a;
-}
-
-/* Titulos */
-h1{
-    text-align: center;
-    margin: 30px 0;
-    font-size: 2.5rem;
-}
-
-h2{
-    margin: 20px 0 10px;
-}
-
-h3{
-    margin: 15px 0;
-}
-
-/* Parrafos */
-p{
-    margin-bottom: 15px;
-}
-
-/* Imagenes */
-img{
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-/* Tarjetas */
-.card{
-    background-color: #1a1a1a;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    border: 1px solid #333;
-}
-
 /* Footer */
 footer{
-    margin-top: auto;
-    background-color: #c1121f;
+    background-color: #e50914;
     color: white;
     text-align: center;
     padding: 25px;
+    font-family: cursive;
+    font-size: 18px;
 }
 
 footer h3{
@@ -104,6 +20,7 @@ footer h3{
 footer ul{
     list-style: none;
     margin-top: 10px;
+    padding: 0;
 }
 
 footer li{
@@ -114,35 +31,30 @@ footer li{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0;
     padding: 40px 20px;
-}
-
-i{
-    font-size: 20px;
-    font-family: cursive;
-    padding: 10px;
 }
 
 .columna{
     flex: 1 1 25%;
     margin-bottom: 20px;
 }
-/* Condicion Responsive */
+
+footer i{
+    font-size: 20px;
+    padding: 10px;
+}
+
+/* Responsive */
 @media (max-width: 768px){
 
-    nav ul{
+    .contenedorFooter{
         flex-direction: column;
         align-items: center;
-        gap: 10px;
+        text-align: center;
     }
 
-    h1{
-        font-size: 2rem;
-    }
-
-    .container{
-        width: 95%;
+    .columna{
+        width: 100%;
     }
 
 }
