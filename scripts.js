@@ -33,6 +33,5 @@ window.addEventListener("DOMContentLoaded", function () {
 
         localStorage.setItem("contacto", JSON.stringify(datos));
         alert("Datos guardados");
-        form.reset();
     });
 });

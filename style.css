@@ -159,7 +159,7 @@ form {
     gap: 1.2rem;
 }
 
-form label {
+form label.form-label {
     font-weight: 600;
     font-size: 0.85rem;
     text-transform: uppercase;
@@ -168,10 +168,7 @@ form label {
     margin-bottom: -0.4rem;
 }
 
-form input[type="text"],
-form input[type="email"],
-form input[type="tel"],
-form textarea {
+form .form-control {
     background-color: #161824;
     border: 2px solid #2d3142;
     border-radius: 8px;
@@ -183,20 +180,19 @@ form textarea {
     width: 100%;
 }
 
-form input::placeholder,
-form textarea::placeholder {
+form .form-control::placeholder {
     color: #475569;
 }
 
-form input:focus,
-form textarea:focus {
+form .form-control:focus {
     border-color: var(--accent-red);
     box-shadow: 0 0 12px rgba(255, 31, 68, 0.4);
     background-color: #1e2130;
+    color: #ffffff;
     outline: none;
 }
 
-form button[type="submit"] {
+form button[type="submit"].btn-danger {
     background: linear-gradient(135deg, var(--accent-red) 0%, var(--dark-red) 100%);
     color: #ffffff;
     border: none;
@@ -212,13 +208,13 @@ form button[type="submit"] {
     margin-top: 1rem;
 }
 
-form button[type="submit"]:hover {
+form button[type="submit"].btn-danger:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(255, 31, 68, 0.5);
     background: linear-gradient(135deg, #ff3d5e 0%, var(--accent-red) 100%);
 }
 
-form button[type="submit"]:active {
+form button[type="submit"].btn-danger:active {
     transform: translateY(1px);
     box-shadow: 0 4px 10px rgba(255, 31, 68, 0.2);
 }
