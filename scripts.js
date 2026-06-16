@@ -1,27 +1,38 @@
-window.addEventListener("DOMContentLoaded", () =>{
-    const form = document.querySelector("form");
-    const  datosGuardados = JSON.parse(localStorage.getItem("contacto"));
-    if(datosGuardados){
-        document.getElementById("nombre").value = datosGuardados.nombre;
-        document.getElementById("apellido").value = datosGuardados.apellido;
-        document.getElementById("telefono").value = datosGuardados.telefono;
-        document.getElementById("correo").value = datosGuardados.correo;
-        document.getElementById("mensaje").value = datosGuardados.mensaje;
-        console.log("Datos cargados");
-    }  
-});
+window.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("form");
+    const campos = ["nombre", "apellido", "telefono", "correo", "mensaje"];
 
-form.addEventListener("submit", (e) => {
-    e.preventDefault();
-    const datos = {
-        nombre: document.getElementById("nombre").value,
-        apellido: document.getElementById("apellido").value,
-        telefono: document.getElementById("telefono").value,
-        correo: document.getElementById("correo").value,
-        mensaje: document.getElementById("mensaje").value
-        
+    if (!form) {
+        return;
     }
-    localStorage.setItem("contacto", JSON.stringify(datos));
-    console.log(datos);
-    alert("Datos guardados");
+
+    const datosGuardados = JSON.parse(localStorage.getItem("contacto"));
+
+    if (datosGuardados) {
+        campos.forEach(function (campo) {
+            const elemento = document.getElementById(campo);
+
+            if (elemento && datosGuardados[campo]) {
+                elemento.value = datosGuardados[campo];
+            }
+        });
+    }
+
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const datos = {};
+
+        campos.forEach(function (campo) {
+            const elemento = document.getElementById(campo);
+
+            if (elemento) {
+                datos[campo] = elemento.value;
+            }
+        });
+
+        localStorage.setItem("contacto", JSON.stringify(datos));
+        alert("Datos guardados");
+        form.reset();
+    });
 });
